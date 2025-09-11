@@ -315,9 +315,17 @@ function App() {
   return (
     <div className="container">
       <header>
-        <div className="logo">🛒</div>
-        <h1>Voice Command Shopping Assistant</h1>
-      </header>
+  <div className="header-inner">
+    <div className="logo">🛒</div>
+    <div className="hero-title">
+      <h1>Voice Command Shopping Assistant</h1>
+      <div className="hero-sub">Multilingual voice shopping — add, remove, search by speaking in English, Hindi or Spanish.</div>
+    </div>
+
+    {/* keep any right-side header content if you have it (e.g., profile, deploy link) */}
+  </div>
+</header>
+
 
       <main>
         <section className="left">
