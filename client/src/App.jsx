@@ -69,7 +69,8 @@ function App() {
   const [statusMessage, setStatusMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [transcriptHighlight, setTranscriptHighlight] = useState('');
-  const BASE_URL = 'http://localhost:5000';
+  const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 
   const notify = (msg) => {
     setStatusMessage(msg);
