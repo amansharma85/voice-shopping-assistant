@@ -1,0 +1,14 @@
+{
+  "shoppingList": [
+    {
+      "item": "tomato",
+      "quantity": 1,
+      "category": "produce"
+    },
+    {
+      "item": "आलू आलू",
+      "quantity": 1,
+      "category": "other"
+    }
+  ]
+}
