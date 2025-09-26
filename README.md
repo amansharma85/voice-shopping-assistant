@@ -1,7 +1,9 @@
-🛒 Voice Command Shopping Assistant
+# 🛒 Voice Command Shopping Assistant
 
-A multilingual, voice-first shopping list assistant built with React (Vite) frontend and Express.js backend.
-Users can manage shopping lists by speaking natural commands in English, Hindi, or Spanish, and get smart suggestions, substitutes, and seasonal items — all in real time.
+A multilingual, voice-first shopping list assistant built with **React (Vite)** frontend and **Express.js** backend.  
+Users can manage shopping lists by speaking natural commands in **English**, **Hindi**, or **Spanish**, and get **smart suggestions**, **substitutes**, and **seasonal items** — all in real time.
+
+---
 
 ## 🚀 Live Demo
 
@@ -9,63 +11,105 @@ Users can manage shopping lists by speaking natural commands in English, Hindi, 
 
 ---
 
-This project was developed as part of an internship assignment with focus on voice-first UI, NLP, and minimalistic UX.
+This project was developed as part of an internship assignment with focus on **voice-first UI**, **natural language processing (NLP)**, and **minimalistic UX**.
 
-✨ Features
-🎤 Voice Input
+---
 
-Add/remove items with natural voice commands:
+## ✨ Features
 
-“Add 2 apples”
+### 🎤 Voice Input
 
-“ब्रेड हटाओ” (Remove bread)
+- Add/remove items with natural voice commands  
+  Examples:
+  - “Add 2 apples”
+  - “ब्रेड हटाओ” (Remove bread)
 
-Multilingual support: English (US), Hindi (India), Spanish
+- Multilingual support: English (US), Hindi (India), Spanish  
+- Real-time transcript with visual feedback
 
-Real-time transcript with visual feedback
+---
 
-💡 Smart Suggestions
+### 💡 Smart Suggestions
 
-Recommendations from past purchase history
+- Recommendations from past purchase history  
+- Seasonal / sale items  
+- Substitutes when items are unavailable  
+  _Example: milk → almond milk_
 
-Seasonal / sale items
+---
 
-Substitutes when items are unavailable
+### 🛍️ Shopping List Management
 
-Example: milk → almond milk
+- Add / remove / clear items via voice or button  
+- Quantity parsing (supports spoken numbers in English & Hindi)  
+- Automatic categorization (e.g., Dairy, Produce, Snacks)
 
-🛍️ Shopping List Management
+---
 
-Add / remove / clear items via voice or button
+### 🔎 Voice-Activated Search
 
-Quantity parsing (supports spoken numbers in English & Hindi)
+- Search items by voice with brand or price filters  
+- “Find toothpaste under $5”  
+- “₹50 से कम का दूध खोजो” (Find milk under ₹50)
 
-Automatic categorization (e.g., Dairy, Produce, Snacks)
+---
 
-🔎 Voice-Activated Search
+### 🖥️ UI/UX
 
-Search for items by voice (brand, price filters)
+- Minimalist, mobile-friendly interface  
+- Visual feedback for recognized commands  
+- Loading states, spinners, and smooth animations  
+- Category badges for better readability
 
-“Find toothpaste under $5”
+---
 
-“₹50 से कम का दूध खोजो” (Find milk under ₹50)
+## 📦 Technical Stack
 
-🖥️ UI/UX
+- **Frontend**: React (Vite), React Hooks, Axios, Tailwind CSS  
+- **Backend**: Express.js, CORS  
+- **Persistence**: `localStorage` (client) + `data.json` (server)  
+- **Deployment**: Vercel (frontend), Render (backend - optional)
 
-Minimalist, mobile-friendly interface
+---
 
-Visual feedback for recognized commands
+## 🛠️ How to Run the Project Locally
 
-Loading states, spinners, and smooth animations
+### 📁 1. Clone the Repository
 
-Category badges for better readability
+```bash
+git clone https://github.com/amansharma85/voice-shopping-assistant.git
+cd voice-shopping-assistant
 
-📦 Technical
+---
+## Run the Frontend 
 
-Frontend: React (Vite) + Hooks + Axios
+cd client
+npm install
+npm run dev
 
-Backend: Express.js + CORS + JSON persistence
 
-Persistence: localStorage (client) + data.json (server)
+---
+## Run the Backend 
 
-Deployment-ready (Vercel + Render setup)
+cd Server
+npm install
+npm run dev
+
+
+---
+# Folder Structure Overview
+
+voice-shopping-assistant/
+│
+├── client/                # React frontend
+│   ├── src/
+│   ├── public/
+│   └── ...
+│
+├── server/                # Express backend
+│   ├── data.json          # Local persistence
+│   └── index.js
+│
+├── README.md
+└── package.json
+
