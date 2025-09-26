@@ -3,6 +3,12 @@
 A multilingual, voice-first shopping list assistant built with React (Vite) frontend and Express.js backend.
 Users can manage shopping lists by speaking natural commands in English, Hindi, or Spanish, and get smart suggestions, substitutes, and seasonal items — all in real time.
 
+## 🚀 Live Demo
+
+👉 [Click here to use the app](https://client-8vh22u1w5-amans-projects-53c71154.vercel.app)
+
+---
+
 This project was developed as part of an internship assignment with focus on voice-first UI, NLP, and minimalistic UX.
 
 ✨ Features
